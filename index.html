@@ -13,8 +13,16 @@
       content="bolsas, ecologicas, empaques, publicidad, reutilizables, tela"
     />
     <title>Ecopuntada</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Raleway:ital@0;1&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f74c0d423.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -39,63 +47,64 @@
         <div class="bloque-inicio">
           <h1>¡JUNTOS POR UN PLANETA MEJOR!</h1>
           <p>Empaques y bolsas ecológicas al por mayor</p>
-          <a href="#materiales" class="boton">Ver más</a>
+          <a href="#materiales" class="boton boton-verde">Cotiza aquí tus bolsitas</a>
         </div>
       </section>
 
       <!-- Seccion materiales -->
-      <section id="materiales">
+      <section id="materiales" class="seccion">
         <div class="container">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+          <p>ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
           ipsum ex temporibus nostrum quae fuga provident assumenda doloribus?
           Dolorem iure unde ipsum? Modi laboriosam ipsum provident, non corrupti
-          inventore sequi.
+          inventore sequi.</p>
         </div>
       </section>
 
       <!-- Seccion productos -->
-      <section id="productos">
+      <section id="productos" class="seccion">
         <div class="container">
           <div class="row">
             <div class="columna columna-33">      
               <div class="bloque-servicio">
-                <div class="bloque-img-servicio">
+                <div class="bloque-img-servicio cuadrado-perfecto">
                   <img src="images/servicio1.jpg" alt="">
                 </div>
                 <div class="bloque-contenido-servicio">
                   <h3>Tela no tejida o Cambrel</h3>
                   <p>Tradicionalmente utilizada para bolsas ecológicas reutilizables economicas, esta compuesta por polipropileno y es antialérgica, antiestática y no tóxica.</p>
-                  <a href="#" class="boton">Ver más</a>
+                  <a href="#" class="boton boton-blanco">Ver más</a>
                 </div>
               </div>
             </div>  
             <div class="columna columna-33">
               <div class="bloque-servicio">
-                <div class="bloque-img-servicio">
+                <div class="bloque-img-servicio cuadrado-perfecto">
                   <img src="images/servicio3.jpg" alt="">
                 </div>
                 <div class="bloque-contenido-servicio">
                   <h3>Liencillo o Algodón crudo</h3>
                   <p>El liencillo es un Tejido Plano, mezcla de algodon y poliester; es una tela rústica, sin brillo y fina. Ideal para dar una presentación suave y elegante a tus bolsitas.</p>
-                  <a href="#" class="boton">Ver más</a>
+                  <a href="#" class="boton boton-blanco">Ver más</a>
                 </div>
               </div>
             </div>
             <div class="columna columna-33">
               <div class="bloque-servicio">
-                <div class="bloque-img-servicio">
+                <div class="bloque-img-servicio cuadrado-perfecto">
                   <img src="images/servicio2.jpg" alt="">
                 </div>
                 <div class="bloque-contenido-servicio">
                   <h3>Poliester</h3>
                   <p>Fibra sintética semi impermeable que permite una mayor intensidad de color en su estampación, de fácil lavado y no se deforma fácilmente.</p>
-                  <a href="#" class="boton">Ver más</a>
+                  <a href="#" class="boton boton-blanco">Ver más</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 <!-- Seccion galeria -->
       <section id="galeria">
         <div class="cointainer-fluid">
@@ -140,31 +149,34 @@
         </div>
       </section>
 
-      <section id="contacto">
-        <div class="container">@
+<!-- Seccion contacto -->
+      <section id="contacto" class="seccion">
+        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Sabaneta+(Ecopuntada)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <div class="container">
           <div class="row">
-            <div class="columna columna-50">
+            <div class="columna columna-50 empujar-50">
               <form action="" method="post">
                 <div class="form-block">
-                  <input type="text" name="nombre" class="form-control">
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                 </div>
                 <div class="form-block">
-                  <input type="email" name="email" class="form-control">
+                  <input type="email" name="email" class="form-control" placeholder="E-mail">
                 </div>
                 <div class="form-block">
-                  <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
                 </div>
-                <div class="form-block">
-                  <input type="submit" value="enviar">
+                <div class="form-block bloque-ultimo">
+                  <input type="submit" class="boton boton-negro" value="Enviar">
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Sabaneta+(Ecopuntada)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+       
       </section>
     </main>
 
+<!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
