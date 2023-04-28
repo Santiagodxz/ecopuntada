@@ -10,6 +10,30 @@ a {
   display: inline-block;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.seccion {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.boton{
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: none;
+}
+
+
+/* Seccion Header */
+
 header {
   padding: 10px 0;
   position: fixed;
@@ -34,42 +58,43 @@ header .container nav a {
   color: green;
   text-decoration: none;
   margin: 0 15px;
+  font-weight: 700;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  position: relative;
+header .container nav a:hover {
+  color: rgb(0, 198, 0);
 }
 
-.seccion {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.columna {
-  padding: 0 15px;
-}
-
-.columna-33 {
-  width: 33.33%;
-}
 /* Seccion Inicio */
 
-.boton{
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-decoration: none;
-  padding: 15px 30px;
-  border: none;
+  position: relative;
+  height: 500px;
+  background-image: url(../images/bannerprincipal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#inicio .bloque-inicio h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#inicio .descripcion {
+  background-color: rgba(0, 128, 0, 0.756);
+  padding: 1px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+#inicio .descripcion p {
+  color: white;
+  padding: 0 200px;
+  text-align: center;
 }
 
 .boton.boton-verde {
@@ -79,83 +104,51 @@ header .container nav a {
   font-weight: 700;
 }
 
-#inicio {
+/* seccion materiales */
+
+#materiales h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#materiales .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+#materiales .material-card {
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 128, 0, 0.4);
+}
+
+#materiales .material-card .img-material{
 position: relative;
 }
 
-#inicio img{
+#materiales .material-card .img-material img{
   width: 100%;
-  display: block;
-  height: 480px;
-  object-fit: cover;
-}
-
-#inicio .bloque-inicio{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 1000px;
-  text-align: center;
-  margin-left: -500px;
-}
-
-#inicio .bloque-inicio h1 {
-  color: white;
-  font-size: 50px;
-}
-
-/* Seccion Materiales */
-
-#materiales {
-  background-image: url(../images/latas.jpg);
-  background-size: cover;
-}
-
-#materiales p {
-  color: white;
-  text-align: center;
-}
-
-/* seccion productos */
-
-#productos .bloque-servicio {
-  border: 1px solid gray;
-}
-
-#productos .bloque-servicio .bloque-img-servicio img {
-  width: 100%;
-}
-
-#productos .bloque-servicio .bloque-img-servicio.cuadrado-perfecto {
-  padding-bottom: 56.25%;
-}
-
-#productos .bloque-servicio .bloque-contenido-servicio {
-  padding: 15px;
-}
-
-.boton.boton-blanco {
-  background-color: white;
-  color: green;
-  font-weight: 700;
-  border: 1px solid green;
-}
-
-.cuadrado-perfecto {
-  width: 100%;
-  padding-bottom: 100%;
+  height: 200px;
   position: relative;
+  border-radius: 5px;
 }
 
-.cuadrado-perfecto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+#materiales .img-material h3 {
+position: absolute;
+top: 10px;
+right: 10px;
+margin: 0;
+padding: 10px;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.228);
 }
 
+#materiales .material-card p{
+padding: 10px;
+margin: 0;
+}
+
+/* Seccion Productos */
 /* Seccion Galeria */
 
 .container-fluid {
