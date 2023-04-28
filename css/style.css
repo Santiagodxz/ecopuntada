@@ -1,3 +1,13 @@
+:root {
+  --color-1: #9BB423;
+  --color-2: #31685B;
+  --color-2-alpha: #31685bc7;
+  --color-3: #35848A;
+  --color-4: #B4CFB0;
+  --color-5: #ABB891;
+  --color-6: #A7D7D4;
+}
+
 * {
   box-sizing: border-box; 
 }
@@ -40,7 +50,7 @@ header {
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: white;
+  background-color: var(--color-2);
   width: 100%;
 }
 
@@ -55,24 +65,23 @@ header .container .logo {
 }
 
 header .container nav a {
-  color: green;
+  color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 700;
 }
 
 header .container nav a:hover {
-  color: rgb(0, 198, 0);
+  color: var(--color-1);
 }
 
 /* Seccion Inicio */
 
 #inicio {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative;
   height: 500px;
   background-image: url(../images/bannerprincipal.jpg);
   background-size: cover;
@@ -84,27 +93,38 @@ header .container nav a:hover {
   font-size: 50px;
 }
 
-#inicio .descripcion {
-  background-color: rgba(0, 128, 0, 0.756);
-  padding: 1px 0;
-  position: absolute;
-  bottom: 0;
-}
-
-#inicio .descripcion p {
-  color: white;
-  padding: 0 200px;
-  text-align: center;
-}
-
 .boton.boton-verde {
   color: white;
-  background-color: green;
+  background-color: var(--color-2);
   font-size: 20px;
   font-weight: 700;
+  border-radius: 5px;
+}
+
+.boton.boton-verde:hover {
+  color: #31685B;
+  background-color: white;
+}
+
+/* seccion nosotros */
+
+#nosotros {
+  background-color: var(--color-2);
+  padding: 1px 0;
+}
+
+#nosotros .descripcion p {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 /* seccion materiales */
+
+#materiales {
+  display: flex;
+  justify-content: space-between;
+}
 
 #materiales h2{
   text-align: center;
@@ -118,12 +138,14 @@ header .container nav a:hover {
 }
 
 #materiales .material-card {
+  width: 350px;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 128, 0, 0.4);
 }
 
 #materiales .material-card .img-material{
 position: relative;
+
 }
 
 #materiales .material-card .img-material img{
@@ -149,6 +171,59 @@ margin: 0;
 }
 
 /* Seccion Productos */
+/* -- Projects Section */
+
+.projects {
+  margin: 0 auto;
+}
+
+.projects h2{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+.project-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--color-w);
+  gap: 15px;
+}
+
+.project-img img{
+  width: 350px;
+}
+
+.project-card {
+  border: 1px solid #eeeeee;
+}
+
+.project-card:focus,
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--color-2);
+  padding-left: 24px;
+  outline: none;
+}
+
+.project-p {
+  color: var(--color-3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  outline: none;
+}
+
 /* Seccion Galeria */
 
 .container-fluid {
