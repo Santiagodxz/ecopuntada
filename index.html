@@ -15,6 +15,7 @@
     <title>Ecopuntada</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./images/icons.svg" />
     <link rel="shortcut icon" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,323 +27,289 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <a href="index.html">
-          <img src="./images/logo.png" alt="logo ecopuntada" class="logo" />
-        </a>
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#productos">Productos</a>
-          <a href="#galeria">Galería</a>
-          <a href="#contacto">Contactanos</a>
-        </nav>
-      </div>
+
+          <a  href="index.html">
+            <img src="./images/logo.png" alt="logo ecopuntada" class="header__logo" />
+          </a>
+          <nav class="header__nav">
+            <a class="nav__link" href="#inicio">Inicio</a>
+            <a class="nav__link" href="#projects">Productos</a>
+            <a class="nav__link" href="#galeria">Galería</a>
+            <a class="nav__link" href="#contacto">Contactanos</a>
+          </nav>
+
     </header>
 
     <main>
-      <!-- Seccion inicio -->
+<!-- Seccion inicio -->
       <section id="inicio">
-
-        <div class="bloque-inicio">
-          <h1>¡JUNTOS POR UN PLANETA MEJOR!</h1>
-          <a href="#materiales" class="boton boton-verde">Cotiza aquí tus bolsitas</a>
-        </div>
+        <div>
+          <h1 class="inicio__text">¡JUNTOS POR UN PLANETA MEJOR!</h1>
+          <a href="https://wa.link/wsladb" target="_blank" class="inicio__button--green">Cotiza aquí tus bolsitas</a>
       </section>
 
       <section id="nosotros">
         <div class="container">
-        <div class="descripcion">
-          <p>En ECOPUNTADA te ofrecemos una gran variedad de empaques y bolsas ecológicas publicitarias ideales para dar una presentacion única y auténtica al momento de entregar a tus productos.</p>
-        </div>
+          <article>
+            <p class="nosotros__description">En ECOPUNTADA te ofrecemos una gran variedad de empaques y bolsas ecológicas publicitarias ideales para dar una presentacion única y auténtica al momento de entregar a tus productos.</p>
+          </article>
         </div>
       </section>
 
-      <!-- Seccion Materiales -->
-      <section id="materiales" class="seccion">
+<!-- Seccion Materiales -->
+      <section id="materials" class="seccion">
         <div class="container">
           <h2>Nuestros Materiales</h2>
-          <div class="row"> 
-            <div class="columna columna-33"> 
-              <div class="material-card">
-                <div class="img-material">
-                  <img src="images/servicio1.jpg" alt="">
-                  <h3>Tela no tejida o Cambrel</h3>    
+          <div class="materials__content"> 
+
+              <div class="material__card">
+                <div class="material-card__image">
+                  <img src="images/servicio1.jpg" alt="Tela Cambrel">
+                  <h3 class="material-card__title">Tela no tejida o Cambrel</h3>    
                 </div>
-                  <p>Tradicionalmente utilizada para bolsas ecológicas reutilizables economicas, esta compuesta por polipropileno y es antialérgica, antiestática y no tóxica.</p>
+                  <p class="material-card__description">Tradicionalmente utilizada para bolsas ecológicas reutilizables economicas, esta compuesta por polipropileno y es antialérgica, antiestática y no tóxica.</p>
               </div>
-            </div>  
-            <div class="columna columna-33">
-              <div class="material-card">
-                <div class="img-material">
-                  <img src="images/servicio3.jpg" alt="">
-                  <h3>Liencillo o Algodón crudo</h3>
+
+              <div class="material__card">
+                <div class="material-card__image">
+                  <img src="images/servicio3.jpg" alt="Tela Liencillo">
+                  <h3 class="material-card__title">Liencillo o Algodón crudo</h3>
                 </div>
-                  <p>El liencillo es un Tejido Plano, mezcla de algodon y poliester; es una tela rústica, sin brillo y fina. Ideal para dar una presentación suave y elegante a tus bolsitas.</p>
+                  <p class="material-card__description">El liencillo es un Tejido Plano, mezcla de algodon y poliester; es una tela rústica, sin brillo y fina. Ideal para dar una presentación suave y elegante a tus bolsitas.</p>
               </div>
-            </div>
-            <div class="columna columna-33">
-              <div class="material-card">
-                <div class="img-material">
-                  <img src="images/servicio2.jpg" alt="">
-                  <h3>Poliester</h3>
+
+              <div class="material__card">
+                <div class="material-card__image">
+                  <img src="images/servicio2.jpg" alt="Tela Poliester">
+                  <h3 class="material-card__title">Poliester</h3>
                 </div>
-                  <p>Fibra sintética semi impermeable que permite una mayor intensidad de color en su estampación, de fácil lavado y no se deforma fácilmente.</p>
+                  <p class="material-card__description">Fibra sintética semi impermeable que permite una mayor intensidad de color en su estampación, de fácil lavado y no se deforma fácilmente.</p>
               </div>
-            </div>
+
           </div>
         </div>
       </section>
 
-      <!-- Seccion productos -->
-<section id="projects">
+<!-- Seccion productos -->
+      <section id="product">
         <div class="container">
           <h2>Nuestros Productos</h2>
-          <div class="projects-container">
-            <div class="project-card">
+          <div class="product__container">
+            <div class="product__card">
               <a href="#">
-                <div class="project-img">
-                  <img src="images/Zafiro.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
+                <div class="product__img">
+                  <img src="images/bolsa-zafiro.jpg" alt="Bolsa con cargaderas" />
+                  <div class="img__overlay">
                     <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
+                      Bolsa es ideal para artículos medianos, resiste hasta 10kg, dependiendo del tamaño puedes empacar hasta 2 pares de zapatos.
                     </p>
                   </div>
                 </div>
-                <h2 class="project-title">Bolsa Zafiro</h2>
+                <h2 class="product__title">Bolsa Zafiro</h2>
               </a>
             </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/bolsa-perla-uncordon.jpeg" alt="Bolsa con un cordón" />
+                  <div class="img__overlay">
+                    <p>
+                      Bolsa tipo boutique ideal para productos pequeños y medianos, dando un toque delicado y elegantes a tu producto.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Bolsas Perla Un Cordón</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/bolsa-perla-doblecordon.jpg" alt="Bolsa doble cordon" />
+                  <div class="img__overlay">
+                    <p>
+                      Ideal de doble cordón ideal para productos relajados, elegantes y pequeños, como ropa, vestidos de baño, muñecos...
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Perla Doble Cordón</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/bolsa-opalo.jpg" alt=" Bolsa con troquel" />
+                  <div class="img__overlay">
+                    <p>
+                      Bolsa ideal para artículos no voluminosos, ni pesados, como camisetas, maquillaje o perfumería.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Bolsa Ópalo</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/bolsa-diamante.jpg" alt="Bolsa con fuelle" />
+                  <div class="img__overlay">
+                    <p>
+                      Esta bolsa es ideal para artículos voluminosos o pesados, tales como almohadas, cajas, vestidos o chaquetas.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Bolsa Diamante</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/bolsa-rubi.jpg" alt="Bolsa con doble cordon y cargaderas" />
+                  <div class="img__overlay">
+                    <p>
+                    Combinamos las bolsas Zafiro y Perla para dar un toque premium a tus productos.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Bolsa Rubí</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/tula-atlas.jpg" alt="Tula deportiva" />
+                  <div class="img__overlay">
+                    <p>
+                      Tulas deportivas corporativas ideales para que tu marca sea completamente visible a todo lugar donde la lleven tus clientes.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Tula Atlas</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/tulas-infantiles.jpg" alt="Tula para niños" />
+                  <div class="img__overlay">
+                    <p>
+                      Tulas infantiles para fiestas de cumpleaños y para todo tipo de ocasiones.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="product__title">Tulas Infantiles</h2>
+              </a>
+            </div>
+            <div class="product__card">
+              <a href="#">
+                <div class="product__img">
+                  <img src="images/totebagcolibri.jpg" alt="Articulos varios" />
+                  <div class="img__overlay">
+                    <p>Variedad de articulos personalizados</p>
+                      <ul>
+                        <li>Tote bags</li>
+                        <li>Bolsas Plegables</li>
+                        <li>Cartucheras</li>
+                        <li>Cojines</li>
+                      </ul>      
 
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/perlauncordon.jpeg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
                   </div>
                 </div>
-                <h2 class="project-title">Bolsas Perla Un Cordón</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/perladoblecordon.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Perla Doble Cordón</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/opalo.jfif" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Bolsa Ópalo</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/diamante.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Bolsa Diamante</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/rubi.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Bolsa Rubí</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/Zafiro.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Tula Atlas</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/tulasinfantiles.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Tulas Infantiles</h2>
-              </a>
-            </div>
-            <div class="project-card">
-              <a href="#">
-                <div class="project-img">
-                  <img src="images/Zafiro.jpg" alt="website Tecnoduck" />
-                  <div class="project-img-overlay">
-                    <p>
-                      Technoduck is a state-of-the-art coronavirus distribution
-                      platform. Companies use this platform for digital
-                      espionage and attacks on competitors' secure servers.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="project-title">Varios</h2>
+                <h2 class="product__title">Varios</h2>
               </a>
             </div>
           </div>
         </div>
       </section>
+      
 <!-- Seccion galeria -->
       <section id="galeria">
-        <div class="cointainer-fluid">
-          <div class="row">
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/Totebag.jpg" alt="">
-                <h4>Imagen 1</h4>
-              </div>
-            </div>
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/Zafiro.jpg" alt="">
-                <h4>Imagen 2</h4>
-              </div>
-            </div>
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/perlabolero.jpg" alt="">
-                <h4>Imagen 3</h4>
-              </div>
-            </div>
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/totebagcolibri.jpg" alt="">
-                <h4>Imagen 4</h4>
-              </div>
-            </div>
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/diamante.jpg" alt="">
-                <h4>Imagen 5</h4>
-              </div>
-            </div>
-            <div class="columna-33">
-              <div class="cuadrado-perfecto">
-                <img src="./images/tulasinfantiles.jpg" alt="">
-                <h4>Imagen 6</h4>
-              </div>
-            </div>
+        <div class="container">
+          <div class="galery__content">
+                <img src="./images/galeria/galeria1.jpg" alt="">
+                <img src="./images/galeria/galeria2.jpg" alt="">
+                <img src="./images/galeria/galeria3.jpg" alt="">
+                <img src="./images/galeria/galeria4.jpg" alt="">
+                <img src="./images/galeria/galeria5.jpg" alt="">
+                <img src="./images/galeria/galeria6.jpg" alt="">
           </div>
         </div>
       </section>
 
 <!-- Seccion contacto -->
       <section id="contacto" class="seccion">
-        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Sabaneta+(Ecopuntada)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         <div class="container">
-          <div class="row">
-            <div class="columna columna-50 empujar-50">
-              <form action="" method="post">
-                <div class="form-block">
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="form-block">
-                  <input type="email" name="email" class="form-control" placeholder="E-mail">
-                </div>
-                <div class="form-block">
-                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                </div>
-                <div class="form-block bloque-ultimo">
-                  <input type="submit" class="boton boton-negro" value="Enviar">
-                </div>
-              </form>
+          <div class="contact__content">
+            <div class="map">
+              <iframe width="100%" height="200" src="https://maps.google.com/maps?width=585&amp;height=400&amp;hl=en&amp;q=Sabaneta+(Ecopuntada)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <div class="contact__workspace">
+              <div class="workspace__photo">
+                <img src="./images/foto-empresa-1.jpg">
+              </div>
+              <div class="workspace__photo">
+                <img src="./images/foto-empresa-1.jpg">
+              </div>             
+              <div class="workspace__photo">
+                <img src="./images/foto-empresa-2.jpg">
+              </div>              
+              <div class="workspace__photo">
+                <img src="./images/foto-empresa-2.jpg">
+              </div>
             </div>
           </div>
         </div>
-       
       </section>
-    </main>
 
+      <!-- CHat Button -->
+      <div class="chat__button">
+
+        <a href="https://wa.link/wsladb" target="_blank">
+          <svg class="icon">
+            <use href="./images/icons.svg#icon-whatsapp"></use>
+          </svg>
+        </a>
+
+      </div>
+    </main>
 <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <div class="container">
-        <div class="row">
-          <div class="columna columna-25">
-            <img src="./images/logo-blanco.png" alt="" class="logo-footer">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img src="./images/logo-blanco.png" alt="">
           </div>
-          <div class="columna columna-25">
-            <h3>Temas relacionados</h3>
-            <ul>
-              <li><a href="#">Tema 1</a></li>
-              <li><a href="#">Tema 1</a></li>
-              <li><a href="#">Tema 1</a></li>
-            </ul>
-          </div>
-          <div class="columna columna-25">
+          <div class="footer__info">
             <h3>Datos de contacto</h3>
             <ul>
-              <li><a href="#">ecopuntada@gmail.com</a></li>
-              <li><a href="#">+57 3052916250</a></li>
-              <li><a href="#">Cra 47C #79A Sur - 15, Sabaneta - Antioquia</a></li>
+              <li>ecopuntada@gmail.com</li>
+              <li>+57 3052916250</li>
+              <li>Cra 47C #79A Sur - 15 <br> Sabaneta - Antioquia</li>
             </ul>
           </div>
-          <div class="columna columna-25">
-            <h3>Redes Sociales</h3>
-            <ul>
-              <li><a href="#"><i></i></a></li>
-              <li><a href="#"><i></i></a></li>
-              <li><a href="#"><i></i></a></li>
-            </ul>
+          <div class="footer__social">
+              <h3>Encuentranos en</h3>
+                <a class="social__link" href="https://instagram.com/ecopuntada" target="_blank">
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a class="social__link" href="https://facebook.com/ecopuntada" target="_blank">
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a class="social__link" href="https://wa.link/wsladb" target="_blank">
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
           </div>
-        </div>
+          <div class="footer__logo">
+            <h3>Una marca</h3>
+            <img src="./images/logo-fdm.png" alt="">
+          </div>
       </div>
-      <div class="barra-footer">
+      <div class="footer_copy">
         &copy; Derechos Reservados - 2023
       </div>
     </footer>
