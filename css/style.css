@@ -456,7 +456,25 @@ border: 1px dashed var(--color-w);
     color: white;
     font-size: 20px;
   }
-
+  .inicio__button--green {
+    color: var(--color-w);
+    background-color: var(--color-2);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+  }
+  
+  .inicio__button--green:hover {
+    color: var(--color-2);
+    background-color: var(--color-w);
+    box-shadow: 1px 1px 5px black;
+  }
+  
   /* Nosotros */
 
   #nosotros {
