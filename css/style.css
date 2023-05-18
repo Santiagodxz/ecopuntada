@@ -434,6 +434,8 @@ border: 1px dashed var(--color-w);
     width: 100%;
   }
 
+ 
+
   /* Header */
 
   header{
@@ -473,6 +475,12 @@ border: 1px dashed var(--color-w);
     justify-content: center;
   }
 
+  #materials h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+
   .materials__content {
 display: block;
 flex-direction: column;
@@ -503,6 +511,10 @@ margin: 0 auto;
 
 /* productos */
 
+#product h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 
 /*  contact */
 
@@ -528,6 +540,7 @@ margin: 0 auto;
 #footer {
   background: var(--color-2);
 text-align: center;
+color: var(--color-w);
 }
 
 .footer__content {
@@ -538,5 +551,7 @@ display: block;
 .footer__info {
   text-align: center;
 }
-
+.footer_copy {
+  color: var(--color-2);
+}
 }
