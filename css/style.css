@@ -472,13 +472,17 @@ border: 1px dashed var(--color-w);
     display: flex;
     justify-content: center;
   }
+
   .materials__content {
 display: block;
+flex-direction: column;
   }
 
   .material__card{
-    margin: 0 auto 10px ;
+width: 300px;
+margin: 0 auto 10px auto;
   }
+
 /* Galery */
 
 #galeria{
