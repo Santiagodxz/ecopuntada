@@ -437,7 +437,7 @@ border: 1px dashed var(--color-w);
 }
 
 
-@media (max-width: 767px)
+@media screen and (max-width: 600px)
 {
   
   .container {
